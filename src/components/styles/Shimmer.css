@@ -1,0 +1,13 @@
+
+.shimmer-card-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shimmer-card{
+  height: 300px;
+  width: 260px;
+  border-radius: 25px;
+  background-color: rgb(234, 234, 234);
+}

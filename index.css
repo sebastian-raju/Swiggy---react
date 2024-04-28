@@ -1,0 +1,183 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+
+/* header component */
+
+
+.header-container{
+  box-shadow: 0px 0px 4px rgba(0,0,0, 0.2);
+  position:fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  background-color: white;
+}
+
+.header-sub-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0px;
+}
+
+.main-header-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.header-logo{
+  width: 40px;
+
+}
+
+.main-logo{
+  width: 100%;
+}
+
+.company-name{
+  font-size: 18px;
+  font-weight: 600;
+  color: orangered;
+  line-height: 16px;
+}
+
+
+.menu-container{
+  display: flex;
+  align-items: center;
+  column-gap: 25px;
+}
+
+.menu-items{
+  font-weight: 500;
+  color: rgba(5, 5, 5, 0.726);
+}
+
+
+/* body */
+
+.body-main-container{
+  margin: 150px auto 150px auto;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.search-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.inp-hotel{
+  padding: 18px;
+  border: none;
+  box-shadow: 0px 0px 4px rgba(0,0,0, 0.2);
+  border-radius: 25px;
+  width: 1000px;
+  min-width: 200px;
+}
+
+.inp-hotel:focus{
+  outline: none;
+}
+
+.card-body-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-content: center;
+  justify-items: center;
+  column-gap: 30px;
+  row-gap: 20px;
+}
+
+@media only screen and (max-width: 1430px){
+  .card-body-container{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 1050px){
+  .card-body-container{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .card-body-container{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  .card-body-container{
+    grid-template-columns: 1fr;
+  }
+}
+
+.topButton-container{
+  width: 90%;
+  margin: 0 auto 50px auto;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.topButton{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color:rgb(237, 107, 55);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.topButton:hover{
+  background-color: rgb(255, 147, 104);
+}
+
+
+/* card component */
+
+
+
+.img-container{
+  height: 170px;
+  width: 260px;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px rgba(0,0,0, 0.2);
+}
+
+.hotel-img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.content-container{
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  max-width: 260px;
+}
+
+.type{
+  width: 100%;
+}
+
+.hotel-name{
+  font-weight: 700;
+  font-size: 19px;
+}
